@@ -1,6 +1,6 @@
 ---
 title:          A Novel Personnel Counting Method Based on WiFi Perception
-date:           2023-01-05 00:01:00 +0800
+date:           2022-04-05 00:01:00 +0800
 selected:       false
 pub:            "International Conference on High Performance Switching and Routing (HPSR)"
 pub_date:       "2022"
