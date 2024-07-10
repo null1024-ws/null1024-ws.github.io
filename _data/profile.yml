@@ -37,18 +37,18 @@ education:
   position: B.S. in Information Security
   date: Sep. 2020 - Jul. 2024
 
-# experience:
-# - name: Peking University
-#   logo: assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Singapore Management University
+  logo: assets/images/badges/smu.png
+  position: Research Engineer
+  date: Aug. 2024 - present
 
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
+# awards:
+# - name: Award Name 2
+#   date: 2024
+# - name: Award Name 1 
+#   date: 2021
 
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
 # if you keep the link to the template so that more people can benefit from it. Thanks!
