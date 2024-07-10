@@ -2,8 +2,8 @@ primary_name: "Shen Wang"
 secondary_name: ""
 navbar_name: "NULL1024"
 
-positions:
-  - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
+# positions:
+#   - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
 
 email: "shenwang918@gmail.com"
 gscholar: El0fj_IAAAAJ
