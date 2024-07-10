@@ -14,7 +14,7 @@ abstract: >-
 # cover:          assets/images/covers/cover3.jpg
 authors:
   - Shenao Yan
-  - Your Name
+  - Shen Wang
   - Yue Duan
   - Hanbin Hong
   - Kiho Lee
