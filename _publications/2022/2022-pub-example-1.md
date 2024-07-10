@@ -9,7 +9,7 @@ abstract: >-
 
 # cover:          assets/images/covers/cover1.jpg
 authors:
-- Shen Wang
+- Your Name
 - Yijie Xun
 - Jie Zhao
 - Yuanyuan Sun
