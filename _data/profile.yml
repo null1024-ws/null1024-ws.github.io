@@ -16,8 +16,10 @@ linkedin: null1024shenwang
 # orcid: 0000-0000-0000-0000
 
 short_bio: >-
-  I am currently a Research Engineer at School of Computing and Information Systems, [Singapore Management University (SMU)](https://www.smu.edu.sg/), working closely with Professor [Yue Duan](https://yueduan.github.io/). 
-  Prior to that, I obtained my Bachelor’s degree at [Northwestern Polytechnical University](https://www.nwpu.edu.cn/). 
+  I am currently a Research Engineer at the School of Computing and Information Systems, Singapore Management University (SMU), working closely with Professor Yue Duan.
+  
+  Prior to that, I obtained my Bachelor’s degree at Northwestern Polytechnical University (NWPU).
+
 
 show_portrait: true
 portrait_url: assets/images/photos/shen_pic.jpg
@@ -25,6 +27,11 @@ portrait_caption: >-
   Photo taken by Jian Guan (PhD@SJTU) during a bike ride along East Coast, Singapore, on Chinese New Year's Day 2023.
 
 education:
+- name: Singapore Management University
+  logo: assets/images/badges/smu.png
+  position: Visiting Research Student
+  date: Sep. 2023 - May. 2024
+
 - name: Northwestern Polytechnical University
   logo: assets/images/badges/nwpu.png
   position: B.S. in Information Security
