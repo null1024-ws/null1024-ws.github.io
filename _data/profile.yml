@@ -28,12 +28,12 @@ portrait_caption: >-
 
 education:
 - name: Singapore Management University
-  # logo: assets/images/badges/smu.png
+  logo: assets/images/badges/smu.png
   position: Visiting Research Student
   date: Sep. 2023 - May. 2024
 
 - name: Northwestern Polytechnical University
-  # logo: assets/images/badges/nwpu.png
+  logo: assets/images/badges/nwpu.png
   position: B.S. in Information Security
   date: Sep. 2020 - Jul. 2024
 
