@@ -3,7 +3,7 @@ title:  >-
         An LLM-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities against Strong Detection
 date:           2024-06-03 00:01:00 +0800
 selected:       true
-pub:            "USENIX Security"
+pub:            "33rd USENIX Security Symposium"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-custom badge-success">Spotlight</span>'
