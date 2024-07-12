@@ -27,11 +27,6 @@ portrait_caption: >-
                   Photo taken by Jian Guan (PhD@SJTU) during a bike ride along East Coast, Singapore, on Chinese New Year's Day 2024.
 
 education:
-- name: Singapore Management University
-  logo: assets/images/badges/smu.png
-  position: Visiting Research Student
-  date: Sep. 2023 - May. 2024
-
 - name: Northwestern Polytechnical University
   logo: assets/images/badges/nwpu.png
   position: B.E. in Information Security
@@ -43,6 +38,10 @@ experience:
   position: Research Engineer
   date: Aug. 2024 - present
 
+- name: Singapore Management University
+  logo: assets/images/badges/smu.png
+  position: Visiting Research Student
+  date: Sep. 2023 - May. 2024
 
 # awards:
 # - name: Award Name 2
