@@ -49,14 +49,9 @@ img {
     margin-bottom: 1.5em;
     float: none;
     max-width: 100%;      /* 最大宽度 100% */
-    max-height: 400px;    /* 最大高度为 400px */
+    max-height: 250px;    /* 最大高度为 400px */
     height: auto;         /* 保持宽高比 */
   }
-}
-
-ul {
-    margin-top: 1em;
-    clear: both; /* 清除浮动 */
 }
 
 
