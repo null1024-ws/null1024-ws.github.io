@@ -42,14 +42,14 @@ img {
 }
 
 @media (max-width: 750px) {
-  #photo {
+#photo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
     float: none;
-    width: 75%;
-    height: 75%;
+    width: 100%;        /* 图片宽度占容器的 100% */
+    height: auto;       /* 保持图片的原始宽高比 */
   }
 }
 
