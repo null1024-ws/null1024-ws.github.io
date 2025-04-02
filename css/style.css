@@ -54,10 +54,6 @@ img {
   }
 }
 
-blockquote {
-    padding-bottom: 1em; /* 或者给 blockquote 增加 padding-bottom */
-}
-
 .header {
   font-family: 'Noto Sans', sans-serif;
   background-position: right bottom;
