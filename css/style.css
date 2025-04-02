@@ -54,6 +54,12 @@ img {
   }
 }
 
+ul {
+    margin-top: 1em;
+    clear: both; /* 清除浮动 */
+}
+
+
 .header {
   font-family: 'Noto Sans', sans-serif;
   background-position: right bottom;
