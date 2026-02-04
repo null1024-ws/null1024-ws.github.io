@@ -7,7 +7,7 @@ html {
 body {
   color: #2E3436;
   /*font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bitstream Vera Serif","Serif";*/
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   /*font-family: 'Muli', sans-serif;*/
 
   font-size: 12pt;
@@ -56,7 +56,7 @@ img {
 
 
 .header {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Lora', serif;
   background-position: right bottom;
   background-repeat: no-repeat;
   /*background-color: #CCC9DC;*/
@@ -128,7 +128,7 @@ li.talks {
 }
 
 h1 {
-  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: 'Lora', serif;
   color: #323A45;
   font-size: 16pt !important;
   line-height: 1.5em;
