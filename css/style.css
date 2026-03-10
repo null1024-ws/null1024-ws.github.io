@@ -98,11 +98,31 @@ h2 {
 a {
   color: var(--accent);
   text-decoration: none;
-  text-underline-offset: 0.14em;
+  text-underline-offset: 0.18em;
+  border-bottom: 1px solid transparent;
+  transition: color 0.18s ease, border-color 0.18s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-color: currentColor;
+}
+
+.hero-text a {
+  color: inherit;
+  font-weight: inherit;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, transparent);
+}
+
+.hero-text a:hover {
+  border-color: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+
+.social a {
+  border-bottom: none;
+}
+
+.social a:hover {
+  border-color: unset;
 }
 
 .sr-only {
