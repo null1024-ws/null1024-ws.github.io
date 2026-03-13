@@ -44,6 +44,11 @@
         <i class="fa-regular fa-envelope"></i>
         <span class="sr-only">Email</span>
       </a>
+      <button class="wechat-copy" type="button" data-wechat-id="_fr33dom_" aria-label="WeChat" data-copy-label="Copied">
+        <i class="fa-brands fa-weixin"></i>
+        <span class="sr-only">WeChat</span>
+        <span class="copy-hint" aria-hidden="true">Copied</span>
+      </button>
     </nav>
 
     <footer class="footer">
@@ -54,6 +59,37 @@
 
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script>
+    (function () {
+      var wechatButton = document.querySelector(".wechat-copy");
+      if (!wechatButton) return;
+      wechatButton.addEventListener("click", function () {
+        var id = wechatButton.getAttribute("data-wechat-id");
+        if (!id) return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(id).then(function () {
+            wechatButton.classList.add("copied");
+            setTimeout(function () {
+              wechatButton.classList.remove("copied");
+            }, 500);
+          });
+        } else {
+          var textarea = document.createElement("textarea");
+          textarea.value = id;
+          textarea.setAttribute("readonly", "");
+          textarea.style.position = "absolute";
+          textarea.style.left = "-9999px";
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textarea);
+          wechatButton.classList.add("copied");
+          setTimeout(function () {
+            wechatButton.classList.remove("copied");
+          }, 500);
+        }
+      });
+    })();
+
     window.setTimeout(function () {
       var value = document.getElementById("busuanzi_value_site_pv");
       var container = document.getElementById("busuanzi_container_site_pv");
