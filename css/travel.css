@@ -8,6 +8,11 @@
   color: var(--muted);
 }
 
+.travel-page h1 {
+  font-size: clamp(2rem, 4.4vw, 2.8rem);
+  line-height: 1.08;
+}
+
 .map-block {
   margin-top: 2rem;
 }
@@ -30,6 +35,10 @@
 }
 
 @media (max-width: 720px) {
+  .travel-page h1 {
+    font-size: clamp(1.85rem, 8vw, 2.35rem);
+  }
+
   .map-card {
     padding: 1rem;
   }
