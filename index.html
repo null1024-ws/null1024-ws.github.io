@@ -18,7 +18,7 @@
         <p>
           I am currently doing my internship at <a href="https://www.finalroundai.com/">Final Round AI</a> in Shanghai.
           <br>
-          I love hiking and traveling.
+          I love hiking and <a href="travel/">traveling</a>.
         </p>
       </div>
     </section>
@@ -32,10 +32,6 @@
         <i class="fa-solid fa-graduation-cap"></i>
         <span class="sr-only">Google Scholar</span>
       </a>
-      <a href="https://x.com/5h3n918" target="_blank" rel="noopener noreferrer" aria-label="X">
-        <i class="fa-brands fa-x-twitter"></i>
-        <span class="sr-only">X</span>
-      </a>
       <a href="https://github.com/null1024-ws" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
         <span class="sr-only">GitHub</span>
@@ -44,59 +40,12 @@
         <i class="fa-regular fa-envelope"></i>
         <span class="sr-only">Email</span>
       </a>
-      <button class="wechat-copy" type="button" data-wechat-id="_fr33dom_" aria-label="WeChat" data-copy-label="Copied">
-        <i class="fa-brands fa-weixin"></i>
-        <span class="sr-only">WeChat</span>
-        <span class="copy-hint" aria-hidden="true">Copied</span>
-      </button>
     </nav>
 
     <footer class="footer">
-      <p>Last updated: March 13, 2026</p>
-      <p id="busuanzi_container_site_pv">Total site visits: <span id="busuanzi_value_site_pv"></span></p>
+      <p>Last updated: March 18, 2026</p>
     </footer>
   </main>
 
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <script>
-    (function () {
-      var wechatButton = document.querySelector(".wechat-copy");
-      if (!wechatButton) return;
-      wechatButton.addEventListener("click", function () {
-        var id = wechatButton.getAttribute("data-wechat-id");
-        if (!id) return;
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(id).then(function () {
-            wechatButton.classList.add("copied");
-            setTimeout(function () {
-              wechatButton.classList.remove("copied");
-            }, 500);
-          });
-        } else {
-          var textarea = document.createElement("textarea");
-          textarea.value = id;
-          textarea.setAttribute("readonly", "");
-          textarea.style.position = "absolute";
-          textarea.style.left = "-9999px";
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand("copy");
-          document.body.removeChild(textarea);
-          wechatButton.classList.add("copied");
-          setTimeout(function () {
-            wechatButton.classList.remove("copied");
-          }, 500);
-        }
-      });
-    })();
-
-    window.setTimeout(function () {
-      var value = document.getElementById("busuanzi_value_site_pv");
-      var container = document.getElementById("busuanzi_container_site_pv");
-      if (container && (!value || !value.textContent.trim())) {
-        container.textContent = "Visitor counter unavailable.";
-      }
-    }, 3000);
-  </script>
 </body>
 </html>

@@ -95,51 +95,6 @@ h2 {
   transform: translateY(-1px);
 }
 
-.social button {
-  width: 2rem;
-  height: 2rem;
-  display: inline-grid;
-  place-items: center;
-  align-items: center;
-  font-size: 1rem;
-  color: var(--icon);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: color 0.18s ease, transform 0.18s ease;
-  position: relative;
-}
-
-.social button:hover {
-  color: var(--icon-hover);
-  transform: translateY(-1px);
-}
-
-.social button.copied {
-  color: var(--accent);
-}
-
-.copy-hint {
-  position: absolute;
-  bottom: -1.6rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(4px);
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 0.68rem;
-  padding: 0.2rem 0.4rem;
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-  white-space: nowrap;
-}
-
-.social button.copied .copy-hint {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
 
 a {
   color: var(--accent);

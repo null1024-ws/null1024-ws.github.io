@@ -1,0 +1,40 @@
+.travel-page {
+  transform: none;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+}
+
+.map-block {
+  margin-top: 2rem;
+}
+
+.map-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.2rem;
+}
+
+#travelmap {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.amcharts-chart-div a {
+  display: none !important;
+}
+
+@media (max-width: 720px) {
+  .map-card {
+    padding: 1rem;
+  }
+
+  #travelmap {
+    height: 420px;
+  }
+}
