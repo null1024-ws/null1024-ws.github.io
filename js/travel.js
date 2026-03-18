@@ -88,6 +88,12 @@ const cities = [
     longitude: 113.2644
   },
   {
+    title: "Chongqing",
+    country: "China",
+    latitude: 29.4316,
+    longitude: 106.9123
+  },
+  {
     title: "Hefei",
     country: "China",
     latitude: 31.8206,
