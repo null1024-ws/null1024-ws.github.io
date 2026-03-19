@@ -28,6 +28,12 @@ const cities = [
     longitude: 121.4737
   },
   {
+    title: "Beijing",
+    country: "China",
+    latitude: 39.9042,
+    longitude: 116.4074
+  },
+  {
     title: "Nanjing",
     country: "China",
     latitude: 32.0603,
