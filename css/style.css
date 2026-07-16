@@ -190,7 +190,7 @@ h1 {
 
 .pub-list li::before {
   counter-increment: pub;
-  content: counter(pub);
+  content: counter(pub) ".";
   position: absolute;
   left: 0;
   top: 0.95rem;
