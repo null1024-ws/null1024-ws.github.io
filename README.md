@@ -1,12 +1,40 @@
-# Minimal Personal Website Template
+# Personal Academic Homepage
 
-## How to use
+A minimal, editorial academic homepage listing affiliation, education,
+publications, and experience, plus an interactive travel map page.
 
-1. Use this repo as a template.
-2. Name the repo `xxx.github.io` where `xxx` is your GitHub username.
-3. Edit `index.html` and `css/style.css` with your info.
-4. Enable GitHub Pages for the repo (if it is not auto-enabled).
+## Design
 
-## Credit
+Built in the **kami** design language: a warm parchment canvas (`#f5f4ed`),
+a single ink-blue accent (`#1B365D`), and a serif-led hierarchy.
 
-This template was created with [Codex](https://openai.com/codex/).
+- Headings: **Cormorant Garamond**
+- Body: **EB Garamond**
+- Fonts loaded from Google Fonts; palette and type tokens live in `css/style.css` `:root`.
+
+## Structure
+
+- `index.html` — main page (intro, education, publications, experience).
+- `travel/index.html` — interactive travel map (amCharts).
+- `css/style.css` — shared styles and design tokens.
+- `css/travel.css`, `js/travel.js` — travel map styles and city data.
+
+## How to edit
+
+- Update your intro, education, publications, and experience in `index.html`.
+- Add cities/countries in `js/travel.js` (the map updates automatically after deploy).
+- Adjust colors or fonts via the CSS variables in `css/style.css` `:root`.
+
+## Local preview
+
+Serve the folder over HTTP (relative links to `travel/` resolve correctly):
+
+```bash
+py -m http.server 8000    # or: python -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## Deploy
+
+Deployed via GitHub Pages using `.github/workflows/static.yml`.

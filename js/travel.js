@@ -123,22 +123,22 @@ if (window.AmCharts) {
     projection: "mercator",
     theme: "light",
     imagesSettings: {
-      rollOverColor: "#284952",
+      rollOverColor: "#1b365d",
       rollOverScale: 2.4,
       selectedScale: 2.4,
-      selectedColor: "#284952",
-      color: "#284952"
+      selectedColor: "#1b365d",
+      color: "#1b365d"
     },
     areasSettings: {
       autoZoom: true,
-      unlistedAreasColor: "#ede5d8",
+      unlistedAreasColor: "#e8e6dc",
       outlineThickness: 0.8,
-      color: "#d6d0c7",
-      colorSolid: "#d6d0c7",
-      selectedColor: "#aab7bd",
-      outlineColor: "#c0b8ac",
-      rollOverColor: "#e2ddd4",
-      rollOverOutlineColor: "#c0b8ac"
+      color: "#dcd9cd",
+      colorSolid: "#dcd9cd",
+      selectedColor: "#b7c4d6",
+      outlineColor: "#c8c2b4",
+      rollOverColor: "#e6e2d8",
+      rollOverOutlineColor: "#c8c2b4"
     },
     dataProvider: {
       map: "worldHigh",

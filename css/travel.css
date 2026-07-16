@@ -1,33 +1,52 @@
-.travel-page {
-  transform: none;
+.page.travel-page {
+  width: min(880px, 100%);
 }
 
 .back-link {
-  font-size: 0.9rem;
-  margin: 0 0 0.6rem;
-  color: var(--muted);
+  margin: 0 0 1.1rem;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.back-link a {
+  color: var(--brand);
+}
+
+.back-link a::before {
+  content: "←  ";
 }
 
 .travel-page h1 {
-  font-size: clamp(2rem, 4.4vw, 2.8rem);
-  line-height: 1.08;
+  font-size: clamp(2.2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.hero-text p:not(.back-link) {
+  margin: 0.7rem 0 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--olive);
 }
 
 .map-block {
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 
 .map-card {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 1.2rem;
+  background: var(--ivory);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 1.1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
 }
 
 #travelmap {
   width: 100%;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .amcharts-chart-div a {
@@ -36,11 +55,11 @@
 
 @media (max-width: 720px) {
   .travel-page h1 {
-    font-size: clamp(1.85rem, 8vw, 2.35rem);
+    font-size: clamp(1.95rem, 8vw, 2.4rem);
   }
 
   .map-card {
-    padding: 1rem;
+    padding: 0.85rem;
   }
 
   #travelmap {
