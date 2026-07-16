@@ -6,11 +6,14 @@ publications, and experience, plus an interactive travel map page.
 ## Design
 
 Built in the **kami** design language: a warm parchment canvas (`#f5f4ed`),
-a single ink-blue accent (`#1B365D`), and a serif-led hierarchy.
+a single ink-blue accent (`#1B365D`), and a serif-led hierarchy with a tight
+editorial rhythm.
 
-- Headings: **Cormorant Garamond**
-- Body: **EB Garamond**
-- Fonts loaded from Google Fonts; palette and type tokens live in `css/style.css` `:root`.
+- One serif for the whole page: **Charter** (system-bundled), with a Georgia /
+  Cambria / Times fallback chain — no web fonts are loaded.
+- A thin ink-blue rule pins the top of the viewport; section titles carry a
+  brand-blue left bar.
+- Palette and type tokens live in `css/style.css` `:root`.
 
 ## Structure
 
