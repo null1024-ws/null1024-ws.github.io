@@ -5,7 +5,7 @@ publications, and experience, plus an interactive travel map page.
 
 ## Design
 
-Built in the **kami** design language: a warm parchment canvas (`#f5f4ed`),
+Built in the [**kami**](https://github.com/tw93/Kami) design language: a warm parchment canvas (`#f5f4ed`),
 a single ink-blue accent (`#1B365D`), and a serif-led hierarchy with a tight
 editorial rhythm.
 
