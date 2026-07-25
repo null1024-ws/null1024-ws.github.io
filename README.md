@@ -1,4 +1,4 @@
-# Personal Academic Homepage
+# Clean Academic Homepage
 
 A minimal, editorial academic homepage listing affiliation, education,
 publications, and experience, plus an interactive travel map page.
