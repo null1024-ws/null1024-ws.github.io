@@ -94,6 +94,18 @@ const cities = [
     longitude: 113.2644
   },
   {
+    title: "Shenzhen",
+    country: "China",
+    latitude: 22.5431,
+    longitude: 114.0579
+  },
+  {
+    title: "Hong Kong",
+    country: "Hong Kong",
+    latitude: 22.3193,
+    longitude: 114.1694
+  },
+  {
     title: "Chongqing",
     country: "China",
     latitude: 29.4316,
@@ -108,7 +120,7 @@ const cities = [
 ];
 
 // Add visited countries here using ISO country codes.
-const visitedCountries = ["SG", "CA", "CN", "JP"];
+const visitedCountries = ["SG", "CA", "CN", "HK", "JP"];
 
 if (window.AmCharts) {
   const mapCities = cities.map((city) => ({

@@ -225,6 +225,42 @@ h1 {
   color: var(--stone);
 }
 
+/* --- Miscellaneous ---------------------------------------------------- */
+
+.misc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.misc-list li {
+  padding: 0.55rem 0;
+}
+
+.misc-list li:first-child {
+  padding-top: 0.15rem;
+}
+
+.misc-list li:last-child {
+  padding-bottom: 0.15rem;
+}
+
+.misc-title {
+  display: block;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--near-black);
+}
+
+.misc-desc {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--olive);
+  text-wrap: pretty;
+}
+
 /* --- Links ------------------------------------------------------------ */
 
 a {
