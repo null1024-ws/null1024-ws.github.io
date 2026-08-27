@@ -11,7 +11,7 @@
 }
 
 .back-link a {
-  color: var(--brand);
+  color: var(--link);
 }
 
 .back-link a::before {

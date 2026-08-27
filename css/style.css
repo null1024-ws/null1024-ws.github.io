@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Luo";
+  src: url("https://cdn.jsdelivr.net/gh/tw93/Luo@main/dist/Luo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+3000-303F, U+FF00-FFEF;
+}
+
 :root {
-  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+  --serif: "Luo", Seravek, Candara, Optima, "Iowan Old Style", Charter, Georgia, "Avenir Next", "Noto Sans CJK SC", sans-serif;
   --display: var(--serif);
   --sans: var(--serif);
 
@@ -7,6 +16,8 @@
   --ivory: #faf9f5;
   --warm-sand: #e8e6dc;
   --brand: #1b365d;
+  --link: #1456a8;
+  --link-hover: #0f4589;
   --near-black: #141413;
   --dark-warm: #3d3d3a;
   --olive: #504e49;
@@ -98,7 +109,7 @@ h1 {
 }
 
 .links a {
-  color: var(--brand);
+  color: var(--link);
 }
 
 /* --- Sections --------------------------------------------------------- */
@@ -264,14 +275,15 @@ h1 {
 /* --- Links ------------------------------------------------------------ */
 
 a {
-  color: var(--brand);
+  color: var(--link);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.18s ease;
+  transition: color 0.18s ease, border-color 0.18s ease;
 }
 
 a:hover {
-  border-color: color-mix(in srgb, var(--brand) 45%, transparent);
+  color: var(--link-hover);
+  border-bottom-color: color-mix(in srgb, var(--link) 45%, transparent);
 }
 
 /* --- Travel page shared bits ----------------------------------------- */
