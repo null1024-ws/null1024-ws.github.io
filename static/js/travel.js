@@ -128,7 +128,37 @@ const cities = [
 // Add visited countries here using ISO country codes.
 const visitedCountries = ["SG", "CA", "CN", "HK", "JP", "QA"];
 
-if (window.AmCharts) {
+const palettes = {
+  light: {
+    background: "#ffffff",
+    marker: "#5871a2",
+    unlisted: "#e8e8e8",
+    land: "#dcdcdc",
+    selected: "#b7c4d6",
+    outline: "#c8c8c8",
+    hover: "#ececec"
+  },
+  dark: {
+    background: "#1c1c1c",
+    marker: "#6f8fd1",
+    unlisted: "#252525",
+    land: "#2f2f2f",
+    selected: "#4a5d7a",
+    outline: "#4a4a4a",
+    hover: "#3a3a3a"
+  }
+};
+
+function isDarkMap() {
+  return document.body.classList.contains("dark");
+}
+
+function renderTravelMap() {
+  const el = document.getElementById("travelmap");
+  if (!el || !window.AmCharts) return;
+
+  el.innerHTML = "";
+  const p = isDarkMap() ? palettes.dark : palettes.light;
   const mapCities = cities.map((city) => ({
     ...city,
     zoomLevel: 5,
@@ -139,24 +169,25 @@ if (window.AmCharts) {
   AmCharts.makeChart("travelmap", {
     type: "map",
     projection: "mercator",
-    theme: "light",
+    backgroundColor: p.background,
+    backgroundAlpha: 1,
     imagesSettings: {
-      rollOverColor: "#1b365d",
+      rollOverColor: p.marker,
       rollOverScale: 2.4,
       selectedScale: 2.4,
-      selectedColor: "#1b365d",
-      color: "#1b365d"
+      selectedColor: p.marker,
+      color: p.marker
     },
     areasSettings: {
       autoZoom: true,
-      unlistedAreasColor: "#e8e6dc",
+      unlistedAreasColor: p.unlisted,
       outlineThickness: 0.8,
-      color: "#dcd9cd",
-      colorSolid: "#dcd9cd",
-      selectedColor: "#b7c4d6",
-      outlineColor: "#c8c2b4",
-      rollOverColor: "#e6e2d8",
-      rollOverOutlineColor: "#c8c2b4"
+      color: p.land,
+      colorSolid: p.land,
+      selectedColor: p.selected,
+      outlineColor: p.outline,
+      rollOverColor: p.hover,
+      rollOverOutlineColor: p.outline
     },
     dataProvider: {
       map: "worldHigh",
@@ -170,5 +201,13 @@ if (window.AmCharts) {
     export: {
       enabled: false
     }
+  });
+}
+
+if (window.AmCharts) {
+  renderTravelMap();
+  new MutationObserver(() => renderTravelMap()).observe(document.body, {
+    attributes: true,
+    attributeFilter: ["class"]
   });
 }

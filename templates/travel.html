@@ -1,0 +1,47 @@
+{% extends "_base.html" %}
+
+{% block page %}prose-page travel-page{% endblock page %}
+{% block lang -%}
+{%- if section.extra.lang %}{{section.extra.lang}}{% else %}{{section.lang}}{% endif -%}
+{%- endblock lang %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block desc %}
+  {% if section.description %}
+    {% set desc = section.description %}
+  {% else %}
+    {% set desc = config.description %}
+  {% endif %}
+  {%- if section.extra.lang %}{% set og_lang = section.extra.lang %}{% else %}{% set og_lang = section.lang %}{% endif -%}
+  {{ <seo config
+      title={section.title}
+      desc={desc}
+      url={section.permalink}
+      lang={og_lang} /> }}
+{% endblock desc %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ get_url(path='css/travel.css') }}">
+{% endblock head %}
+
+{% block content %}
+<div id="wrapper">
+  <main>
+    {{ <back_link path={get_url(path="/")} config /> }}
+    {% include "_section_title.html" %}
+    <article class="prose">
+      {{ section.content | safe }}
+      <div class="map-card">
+        <div id="travelmap"></div>
+      </div>
+    </article>
+    {% include "_footer.html" %}
+  </main>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="{{ get_url(path='js/travel.js') }}"></script>
+{% endblock script %}

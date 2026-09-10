@@ -1,0 +1,76 @@
+base_url = "https://null1024-ws.github.io"
+title = "Shen Wang"
+description = "drinking coke without any pressure"
+default_language = "en"
+theme = "serene"
+output_dir = "public"
+compile_sass = true
+minify_html = false
+build_search_index = false
+generate_feeds = false
+feed_filenames = ["feed.xml"]
+taxonomies = [{ name = "tags" }, { name = "categories" }]
+
+[markdown]
+render_emoji = false
+external_links_target_blank = true
+external_links_no_follow = false
+external_links_no_referrer = true
+smart_punctuation = false
+github_alerts = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+#=========================================================================================
+
+[extra]
+
+nav = [
+  { name = "pubs", path = "/pubs" },
+  { name = "travel", path = "/travel" },
+  { name = "miscellaneous", path = "/miscellaneous" },
+  { name = "posts", path = "/posts" },
+]
+
+name = "Shen Wang"
+handle = "B1ad3"
+bio = "drinking coke without any pressure"
+avatar = "img/avatar.webp"
+links = [
+  { name = "Email", icon = "email", url = "mailto:shenwang918@gmail.com" },
+  { name = "GitHub", icon = "github", url = "https://github.com/null1024-ws" },
+  { name = "Google Scholar", icon = "googlescholar", url = "https://scholar.google.com/citations?user=El0fj_IAAAAJ&hl=en" },
+]
+blog_section_path = "/posts"
+
+back_link_text = "Back"
+color_scheme = "auto"
+
+footer_copyright = "© 2026 Shen Wang"
+footer_credits = true
+
+not_found_error_text = "404 Not Found"
+not_found_recover_text = "« back to home »"
+
+date_format = "%b %-d, %Y"
+toc = true
+code_copy = true
+comment = false
+math = false
+mermaid = false
+outdated_alert = false
+outdated_alert_days = 120
+outdated_alert_text_before = "This article was last updated "
+outdated_alert_text_after = " days ago and may be out of date."
+
+reaction = false
+reaction_align = "right"
+reaction_endpoint = "https://example.com/api/reaction"

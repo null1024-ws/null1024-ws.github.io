@@ -1,0 +1,6 @@
+layout = "row"
+flow = "stack"
+
+[[item]]
+title = "CityU MSc CS Course Guide"
+link = "https://null1024-ws.github.io/CityU-CS-Guide/"
