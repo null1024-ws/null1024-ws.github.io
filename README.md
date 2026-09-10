@@ -1,4 +1,4 @@
-# Shen Wang
+# Homepage
 
 Personal site built with [Zola](https://www.getzola.org/) and the [Serene](https://github.com/isunjn/serene) theme.
 
