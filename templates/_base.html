@@ -1,0 +1,46 @@
+{% set color_scheme = config.extra.color_scheme if config.extra.color_scheme is defined else "auto" %}
+<!DOCTYPE html>
+
+<html lang="{% block lang %}{% endblock lang %}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  {% block desc %}{% endblock desc %}
+  <title>{% block title %}{% endblock title %}</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='img/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='img/favicon-16x16.png') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='img/apple-touch-icon.png') }}">
+  {% include "_custom_font.html" %}
+  {% include "_custom_css.html" %}
+  <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
+  {% block head %}{% endblock head %}
+  {% include "_head_extend.html" %}
+</head>
+
+<body class="{% block page %}{% endblock page%}{% if color_scheme == "dark" %} dark{% endif %}">
+  {% if color_scheme == "auto" %}
+  <script>
+    (function () {
+      function applyTheme() {
+        var stored = localStorage.getItem('theme') || sessionStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.body.classList.toggle('dark', dark);
+        var hl = document.querySelector('link#hl');
+        if (hl) hl.href = dark
+          ? '{{ get_url(path="giallo-dark.css") }}'
+          : '{{ get_url(path="giallo-light.css") }}';
+      }
+      applyTheme();
+      document.addEventListener('prerenderingchange', applyTheme);
+      window.addEventListener('pageshow', applyTheme);
+    })();
+  </script>
+  {% endif %}
+  {% block content %}{% endblock content %}
+  {% block script %}{% endblock script %}
+  <script src="{{ get_url(path='js/main.js') }}"></script>
+</body>
+
+</html>
