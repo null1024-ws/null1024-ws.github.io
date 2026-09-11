@@ -2,16 +2,10 @@ layout = "card"
 flow = "stack"
 
 [[item]]
-title = "An LLM-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities against Strong Detection"
-subtitle = "Shenao Yan, **Shen Wang**, Yue Duan, Hanbin Hong, Kiho Lee, Doowon Kim, Yuan Hong."
-badge = "USENIX Security'24"
-link = "https://www.usenix.org/conference/usenixsecurity24/presentation/yan"
-
-[[item]]
-title = "Disassembling Obfuscated Executables with LLM"
-subtitle = "Huanyao Rong, Yue Duan, Hang Zhang, XiaoFeng Wang, Hongbo Chen, Shengchen Duan, **Shen Wang**."
-badge = "arXiv'24"
-link = "https://arxiv.org/abs/2407.08924"
+title = "Trapped by the Tails: A Three-Layer Failure of Cross-Chain Metric Portability in EVM Ecosystems"
+subtitle = "Yao Zhao, Sheng Zhang, **Shen Wang**, Shengchen Duan, Daoyuan Wu, Zhiyuan Wan."
+badge = "arXiv'26"
+link = "https://arxiv.org/pdf/2601.17356"
 
 [[item]]
 title = "PDLogger: Automated Logging Framework for Practical Software Development"
@@ -24,6 +18,18 @@ title = "Understanding and Characterizing Obfuscated Funds Transfers in Ethereum
 subtitle = "Zhang Sheng, Tan Kia Quang, **Shen Wang**, Shengchen Duan, Kai Li, Yue Duan."
 badge = "arXiv'25"
 link = "https://arxiv.org/abs/2505.11320"
+
+[[item]]
+title = "An LLM-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities against Strong Detection"
+subtitle = "Shenao Yan, **Shen Wang**, Yue Duan, Hanbin Hong, Kiho Lee, Doowon Kim, Yuan Hong."
+badge = "USENIX Security'24"
+link = "https://www.usenix.org/conference/usenixsecurity24/presentation/yan"
+
+[[item]]
+title = "Disassembling Obfuscated Executables with LLM"
+subtitle = "Huanyao Rong, Yue Duan, Hang Zhang, XiaoFeng Wang, Hongbo Chen, Shengchen Duan, **Shen Wang**."
+badge = "arXiv'24"
+link = "https://arxiv.org/abs/2407.08924"
 
 [[item]]
 title = "A Novel Personnel Counting Method Based on WiFi Perception"
