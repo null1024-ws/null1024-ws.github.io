@@ -4,7 +4,7 @@ flow = "stack"
 [[item]]
 title = "Trapped by the Tails: A Three-Layer Failure of Cross-Chain Metric Portability in EVM Ecosystems"
 subtitle = "Yao Zhao, Sheng Zhang, **Shen Wang**, Shengchen Duan, Daoyuan Wu, Zhiyuan Wan."
-badge = "EMSE"
+badge = "EMSE'26"
 link = "https://arxiv.org/pdf/2601.17356"
 
 [[item]]
